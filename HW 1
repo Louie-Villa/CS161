@@ -1,0 +1,22 @@
+
+pet_type = "dog"
+pet_name="Rogue"
+
+print(f"I have a {pet_type} and her name is {pet_name}")
+
+name=input("Enter your name:") #collecting username, age, and savings
+age=input("Enter your current age:")
+yearly_savings=input("Enter your yearly savings:")
+future_age =int(age) + 10 #converting string to integer and adding 10
+future_savings = int(yearly_savings) *5
+average_savings = int(yearly_savings) /12 # finding monthly savings from yearly savings
+
+print("Hello " +(name)+"! You are currently " +(age)+" years old. In 10 years, you will be " + str(future_age) + ". If you save $" + (yearly_savings) + " each year, in 5 years you will have saved $" + str(future_savings) + ".")
+print("\nYour average monthly savings is " + str(average_savings)+"0.")
+
+print(f"\nThe number of seconds in January is {31*24*60*60}.") #evaluating number of seconds in January
+
+egg_number = input(f"\nEnter the number of eggs:")
+egg_dozens=int(egg_number)//12
+remainder=int((egg_number)) % 12 #finding remainder
+print(f"This makes " + str(egg_dozens) + " dozen eggs with " + str(remainder) + " left over.")
