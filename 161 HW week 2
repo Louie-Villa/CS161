@@ -1,0 +1,26 @@
+x = 31
+print (x, bin(x), hex(x))
+
+#Changing value of x. x=1.85. Answer to question 2 is TypeError: 'float' object cannot be interpreted as an integer
+#Answer to question 3
+y = 0b1011
+z = 0xA3
+print (y, z)
+##4
+w = x + y + z
+print ('the sum is ' , w)
+
+#compression answers
+original_size = 270
+dictionary_size = 30
+compressed_text_size = 170
+
+compression_percent= 1-float((compressed_text_size + dictionary_size)/ original_size)
+compression_percent=(compression_percent) *100
+
+print ('Compressed text size:', str(compressed_text_size), 'characters')
+print ('\n     Dictionary size:', str(dictionary_size), 'characters')
+print ('\n               Total:', (int(dictionary_size)+ int(compressed_text_size)), 'characters')
+print ('\n       Original_size:', str(original_size), 'characters')
+print ('\n     Dictionary size:', str(dictionary_size), 'characters')
+print ('\n         Compression:',round(compression_percent,2),'%')
