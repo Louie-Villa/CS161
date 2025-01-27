@@ -1,0 +1,23 @@
+#getting input from user and storing it as a variable/printing "hello" and name (five times)
+name=input("What is your name?:")
+print("Hello " + name+ " "+ name+ " "+ name+ " "+ name+ " "+ name+ " ")
+
+#2. converting string to integer and adding 5 years.
+#NameError: name 'x' is not defined is the answer to question 2
+
+#3. Use concatenation to print how old they will be in x years.
+age = input("What's your age?")
+years_added=input("How many years would you like to add to your age?")
+future_age = int(age) + int(years_added)
+print(future_age)
+
+#4./5. Finding weekly earnings using float,str, and int functions
+hours_worked=float(input("Enter the number of hours worked: "))
+hourly_wage=float(input("Enter your hourly wage without the $: "))
+print(hourly_wage)
+print(hours_worked)
+weekly_total= int(hourly_wage)*int(hours_worked)
+print("Your weekly earnings are: $ "+ str(float(weekly_total)) + "0")
+
+
+
