@@ -1,0 +1,43 @@
+#1. Defining average and printing the average of selected values.
+def average(num1,num2,num3):
+    return(num1+num2+num3)/3
+print(average(7,5,9))
+print(average(6,6,7))
+
+#2. The script won't run. the name 'average' is not defined. It's because we haven't defined what average is before the input.
+#3. The same problem exists as it does it question 2. We haven't defined what num1 is as a variable.
+#4.
+dogs_age = input("Enter your dog's age: ")
+dogs_age_human_years = 24+ (int(dogs_age)-2)*4
+print("Your " + dogs_age + " year old dog is " + str(dogs_age_human_years) + " in human years.")
+#5.
+def ice_cream_cone_price():
+    price =int(scoops) * 1.15 + 2.25
+    print(price)
+scoops=input("How many scoops?")
+ice_cream_cone_price()
+
+def new_value():
+    if type_of_car == "German":
+        value_of_car = int(price_of_car) -(int(price_of_car) * .05) * int(number_of_years)
+        print(value_of_car)
+    elif type_of_car =="Italian":
+        value_of_car = int(price_of_car) +(int(price_of_car) * .05) * int(number_of_years)
+        print(value_of_car)
+    elif type_of_car == "Japanese":
+        value_of_car = int(price_of_car) -(int(price_of_car) * .07) * int(number_of_years)
+        print(value_of_car)
+
+type_of_car=input("Enter your type of car; German, Italian, or Japanese:")
+number_of_years= input("Number of years:")
+price_of_car=input("Enter the price of your car:")
+new_value()
+#6.
+def pet_age():
+    dogs_age_human_years = 24+ (int(dogs_age)-2)*4
+    print("Your " + dogs_age + " year old dog," + dogs_name + " is "+ str(dogs_age_human_years) + " in human years.")
+dogs_name = input("Enter your dog's name:")
+dogs_age = input("Enter your dog's age: ")
+pet_age()
+
+#sorry I couldn't submit this in docstrings. I work for 12 hours and my eyes can hardly handle the strain. I'm rushed for time and need to finish the other assignments
