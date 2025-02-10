@@ -1,0 +1,130 @@
+#importing modules
+import psutil
+import requests
+#creating dictionary
+'''creating dictionary using keywords'''
+state_name = {
+    "Alabama": "Montgomery",
+    "Alaska": "Juneau",
+    "Arizona": "Phoenix",
+    "Arkansas": "Little Rock",
+    "California": "Sacramento",
+    "Colorado": "Denver",
+    "Connecticut": "Hartford",
+    "Delaware":	"Dover",
+    "Florida": "Tallahassee",
+    "Georgia":	"Atlanta",
+    "Hawaii":	"Honolulu",
+    "Idaho":	"Boise",
+    "Illinois": "Springfield",
+    "Indiana": "Indianapolis",
+    "Iowa": "Des Moines",
+    "Kansas": "Topeka",
+    "Kentucky": "Frankfort",
+    "Louisiana": "Baton Rouge",
+    "Maine": "Augusta",
+    "Maryland":	"Annapolis",
+    "Massachusetts": "Boston",
+    "Michigan": "Lansing",
+    "Minnesota": "Saint Paul",
+    "Mississippi": "Jackson",
+    "Missouri":	"Jefferson City",
+    "Montana": "Helena",
+    "Nebraska":	"Lincoln",
+    "Nevada":	"Carson City",
+    "New Hampshire": "Concord",
+    "New Jersey": "Trenton",
+    "New Mexico": "Santa Fe",
+    "New York": "Albany",
+    "North Carolina": "Raleigh",
+    "North Dakota": "Bismarck",
+    "Ohio": "Columbus",
+    "Oklahoma": "Oklahoma City",
+    "Oregon": "Salem",
+    "Pennsylvania": "Harrisburg",
+    "Rhode Island": "Providence",
+    "South Carolina": "Columbia",
+    "South Dakota": "Pierre",
+    "Tennessee": "Nashville",
+    "Texas": "Austin",
+    "Utah": "Salt Lake City",
+    "Vermont":	"Montpelier",
+    "Virginia":	"Richmond",
+    "Washington": "Olympia",
+    "West Virginia": "Charleston",
+    "Wisconsin": "Madison",
+    "Wyoming": "Cheyenne",
+
+}
+
+#1: requesting a number to be given
+number = input("Enter a number: ")
+if int(number) % 5 == 0:
+    print("The number", number, "is divisible by 5")
+else:
+    print("The number", number, "is not divisible by 5")
+
+#3.1
+state = input("Enter a state:")
+if (state == "Alabama"):
+    print ("Montgomery")
+elif (state == "Alaska"):
+    print ("Juneau")
+elif (state == "Arizona"):
+    print ("Phoenix")
+elif (state == "Arkansas"):
+    print ("Little Rock")
+elif (state == "California"):
+    print ("Sacramento")
+elif (state == "Colorado"):
+    print ("Denver")
+elif (state == "Connecticut"):
+    print ("Hartford")
+else:
+    print("Invalid state")
+#3.2
+capital = input("Enter a state: ")
+print(state_name.get(capital))
+#3.3
+state= input("Enter a state:")
+command =  state
+match command:
+    case "Alabama":
+        print ("Montgomery")
+    case"Alaska":
+        print("Juneau")
+    case "Arizona":
+        print("Phoenix")
+    case "Arkansas":
+        print("Little Rock")
+    case "California":
+        print("Sacramento")
+    case "Colorado":
+        print("Denver")
+    case "Connecticut":
+        print("Hartford")
+    case other:
+        print('No match found')
+#4 I hope I'm doing docstrings right?
+'''This is an if-elif statement and returning a value.'''
+def pool_admission():
+    (age)=input("Enter your age: ")
+    if int(age) < 2:
+        return 0
+    elif int(age) >= 2 and int(age) <= 11:
+        return 3
+    elif int(age) >= 11 and int(age) <= 60:
+        return 6
+    elif int(age) > 60:
+        return 4
+print(pool_admission())
+#2 I couldn't figure this one out
+x = requests.get('http://www.coccbobcat.com/',"160")
+print(x.text)
+
+#3
+print("Number of running processes: " + str(len(psutil.pids())))
+
+
+
+
