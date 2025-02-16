@@ -1,0 +1,20 @@
+x=int(x)
+while (x > 0):
+    if x % 2 == 0:
+        print(x,"is even.")
+    else:
+        print(x,"is odd.")
+    x = x - 1
+print("blastoff!!")
+x=input("enter an integer:")
+y=input("enter an integer to decrease by:")
+x=int(x)
+y=int(y)
+while (x > 0):
+	print (x)
+	x = x - y
+word=input("enter a word:")
+length_word=len(word)
+if len(word) >=5:
+    print(word + " has " +str(length_word) + " letters.")
+else: print("goodbye")
