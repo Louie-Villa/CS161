@@ -18,3 +18,8 @@ length_word=len(word)
 if len(word) >=5:
     print(word + " has " +str(length_word) + " letters.")
 else: print("goodbye")
+length_word = len(word)>=4
+word=""
+while word != length_word
+	guess= input("enter a word")
+print("1"
