@@ -1,4 +1,14 @@
+#converting string to integer
+x=input("enter an integer:")
 x=int(x)
+#while statement
+while (x > 0):
+	print (x)
+	x = x - 1
+print ('blastoff!!')
+x=input("enter an integer:")
+x=int(x)
+#seeing if there is a remainder to decide if it is even or not
 while (x > 0):
     if x % 2 == 0:
         print(x,"is even.")
@@ -13,13 +23,53 @@ y=int(y)
 while (x > 0):
 	print (x)
 	x = x - y
-word=input("enter a word:")
+word="rabbit"
+# finding the length of the variable and printing result
 length_word=len(word)
-if len(word) >=5:
-    print(word + " has " +str(length_word) + " letters.")
-else: print("goodbye")
-length_word = len(word)>=4
-word=""
-while word != length_word
-	guess= input("enter a word")
-print("1"
+while len(word) >=5:
+    word=input("enter a word:")
+    length_word=len(word)
+    print(word+" has " +str(length_word) + " letters.")
+print("goodbye")
+counter= 0
+word="rabbit"
+length_word=len(word)
+#creating counter to limit input
+while len(word) >=5 and counter <=4:
+    word=input("enter a word:")
+    length_word=len(word)
+    print(word+" has " +str(length_word) + " letters.")
+    counter +=1
+    if counter >=5 and length_word >=5:
+        print("loser")
+    else:
+        if length_word <=5:
+            print("goodbye")
+#finding and printing decimal, binary, and hex forms
+num = 10
+while num<=100:
+    print(f"{num} - Decimal, {bin (num)} - Binary, {hex(num)} - Hexadecimal")
+    num = num + 1
+num = input("how many stars to you want?")
+num=int(num)
+#iteration of number of stars
+''' defining number_of_stars variable, creating a while statement num>=0, printing"*" and reducing by one to create a loop.'''
+def number_of_stars(num):
+    while num >=0:
+        print(num*"*")
+        num=num-1
+number_of_stars(num)
+num = input("how many stars to you want?")
+num=int(num)
+#recursion of Number of stars
+def Number_of_stars(num):
+    if num >=0:
+        print(num*"*")
+        num=num-1
+        Number_of_stars(num)
+Number_of_stars(num)
+
+
+
+
+
